@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Готовить_по -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Готовить_по">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Факультеты"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Направления_подготовки"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Дата_рождения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Дата_рождения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Пол -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Пол">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Стаж -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Стаж"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Сотрудники"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Аспиранты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Аспиранты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учащиеся"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Ассистены -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Ассистены">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бакалавры -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бакалавры">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Студенты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бухгалтерия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бухгалтерия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Декан -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Декан">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Департамент_по_международным_связям -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Департамент_по_международным_связям">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Доцент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Доцент">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Зав_кафедры -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Зав_кафедры">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#ИНСПО -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#ИНСПО">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Студенты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди"/>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Магистранты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Магистранты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Студенты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Материальный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Материальный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бухгалтерия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Мобилизационный_отдел -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Мобилизационный_отдел">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Направления_подготовки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Направления_подготовки"/>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Общая -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Общая">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бухгалтерия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Преподавтели -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Преподавтели">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Сотрудники"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессоры -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессоры">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Расчетный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Расчетный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Бухгалтерия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Ректорат -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Ректорат">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Сотрудники -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Сотрудники">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Старшие_преподаватели -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Старшие_преподаватели">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Профессорско_преподавательский_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Студенты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Студенты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учащиеся"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Технический_состав -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Технический_состав">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Сотрудники"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учащиеся -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учащиеся">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Люди"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учебный_отдел -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Учебный_отдел">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Факультеты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Факультеты"/>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Финансово_экономическое_управление -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Финансово_экономическое_управление">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Административный_состав"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Колотий_А_Д -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Колотий_А_Д">
+        <rdf:type rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Декан"/>
+        <Дата_рождения>1950-01-12</Дата_рождения>
+        <Пол>Мужской</Пол>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Прикладная_математика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Прикладная_математика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Направления_подготовки"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#ФКТиПМ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#ФКТиПМ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Факультеты"/>
+        <Готовить_по rdf:resource="http://www.semanticweb.org/s0123175/ontologies/2020/1/untitled-ontology-3#Прикладная_математика"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
