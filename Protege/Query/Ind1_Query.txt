@@ -1,0 +1,33 @@
+==================Запрос 1=====================================================
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX company:<http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#>
+
+SELECT ?Показатель ?Формула
+	WHERE { 
+		?Показатель company:Формула ?Формула. 
+		?Показатель rdf:type company:Показатели_оборачиваемости.
+		filter not exists { ?Показатель company:Значение_благополучия ?Значение }
+	}
+	ORDER BY ASC (?Показатель)
+==================Запрос 2=====================================================
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX company:<http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#>
+
+SELECT ?Отчет ?Своиство ?Значение
+WHERE {
+	?Отчет rdf:type company:Отчет_о_финансовом_положении.
+	?Отчет company:Отчет_компании company:Компания_2.
+	?Отчет ?Своиство ?Значение.
+	FILTER (?Значение >=400 && ?Значение <= 1000).
+	}
+	ORDER BY (?Своиство)
+====================Правило 1===================================================
+untitled-ontology-12:Является_руководителем(?начальник, ?компания) ^ untitled-ontology-12:Является_работником_компании(?работник, ?компания) -> untitled-ontology-12:Начальник_компании(?работник, ?начальник)
+====================Правило 2===================================================
+untitled-ontology-12:Является_работником_компании(?работник, ?компания) ^ untitled-ontology-12:Предоставил_отчет(?работник, ?отчет) -> untitled-ontology-12:Отчет_компании(?отчет, ?компания)

@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#имеет_должность -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#имеет_должность"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#принадлежит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#принадлежит">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#учиться_на -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#учиться_на">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#дата_рождения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#дата_рождения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#пол -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#пол">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#администрация -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#администрация">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#бакалавриат -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#бакалавриат">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#магистратура -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#магистратура">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#повышение_калификации -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#повышение_калификации">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#направление_подготовки"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#работники -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#работники">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#студенты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#студенты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#люди"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#технический_персонал -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#технический_персонал">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#учебно-вспомогательный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#учебно-вспомогательный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#структура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Иванов_Иван_Иванович -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Иванов_Иван_Иванович">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#студенты"/>
+        <учиться_на rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#мат.обес"/>
+        <дата_рождения>12.02.1995</дата_рождения>
+        <пол>м</пол>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Колотий_А._Д. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Колотий_А._Д.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#работники"/>
+        <имеет_должность rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#декан"/>
+        <дата_рождения>01.01.1965</дата_рождения>
+        <пол>м</пол>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Петров_Петр_Петрович -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#Петров_Петр_Петрович">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#студенты"/>
+        <учиться_на rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#прикладная_математика"/>
+        <дата_рождения>09.06.2000</дата_рождения>
+        <пол>м</пол>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#ассистент_преподователя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#ассистент_преподователя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#декан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#декан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#доцент -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#доцент">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#зав.кафедры -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#зав.кафедры">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#мат.обес -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#мат.обес">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#бакалавриат"/>
+        <принадлежит rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#фпм"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#матфак -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#матфак">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#преподователь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#преподователь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#прикладная_математика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#прикладная_математика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#бакалавриат"/>
+        <принадлежит rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#фпм"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессор -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессор">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#ргф -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#ргф">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#старший_преподователь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#старший_преподователь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#профессорско-преподавательский_состав"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#фпм -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#фпм">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#факультет"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

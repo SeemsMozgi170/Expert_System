@@ -1,0 +1,20 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX university: <http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#>
+
+SELECT DISTINCT ?ФИО ?Должность ?Зарплата
+	WHERE { ?ФИО university:имеет_должность ?Должность .?Должность university:имеет_зарплату ?Зарплата}
+	ORDER BY DESC (?ФИО)
+	#OFFSET 1
+	#LIMIT 5
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX company:<http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#>
+
+SELECT ?ФИО ?Отчет
+	WHERE {?ФИО company:Предоставил_отчет ?Отчет}

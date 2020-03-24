@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ontology: <http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#>
+
+#SELECT ?subject ?object
+#	WHERE { ?subject  <http://www.semanticweb.org/hieut/ontologies/2020/1/untitled-ontology-3#имеет_зарплату> ?object . filter(?object > 15000)}
+#	order by asc(?subject)
+#	offset 2
+#	limit 3
+SELECT ?x ?z	WHERE {?x ontology:имеет_должность ?y. ?y ontology:имеет_зарплату ?z.}
+ORDER BY ASC(?x)

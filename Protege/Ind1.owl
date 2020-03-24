@@ -1,0 +1,1376 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Начальник_компании -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Начальник_компании"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_компании -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_компании"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Предоставил_отчет -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Предоставил_отчет"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Является_работником_компании -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Является_работником_компании"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Является_руководителем -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Является_руководителем"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Выручка -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Выручка">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дата_отчета -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дата_отчета">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дата_рождения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дата_рождения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дебиторская_задолженность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Дебиторская_задолженность">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Денежные_средства_и_денежные_эквиваленты -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Денежные_средства_и_денежные_эквиваленты">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Должность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Должность">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Единица_измерения_показателя -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Единица_измерения_показателя">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Заемные_средства_долгосрочные_обязательства -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Заемные_средства_долгосрочные_обязательства">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Заемные_средства_краткосрочные_обязательства -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Заемные_средства_краткосрочные_обязательства">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Запасы -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Запасы">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Зарплата -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Зарплата">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Значение_благополучия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Значение_благополучия">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_внеоборотным_активам -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_внеоборотным_активам">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_долгосрочным_обязательствам -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_долгосрочным_обязательствам">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_краткосрочным_обязательствам -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_краткосрочным_обязательствам">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_оборотным_активам -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_оборотным_активам">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_собственному_капиталу_и_резерву -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Итого_по_собственному_капиталу_и_резерву">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Кредиторская_задолженность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Кредиторская_задолженность">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Название_компании -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Название_компании">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Незавершенное_производство -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Незавершенное_производство">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Нераспределенная_прибыль -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Нераспределенная_прибыль">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Основные_средства -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Основные_средства">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отрицательный_денежный_поток_всего -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отрицательный_денежный_поток_всего">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отрицательный_денежный_поток_по_текущей_деятельности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отрицательный_денежный_поток_по_текущей_деятельности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_отчета -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_отчета">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Пол -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Пол">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_всего -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_всего">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_инвестиционной_деятельности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_инвестиционной_деятельности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_текущей_деятельности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_текущей_деятельности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_финансовой_деятельности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Положительный_денежный_поток_по_финансовой_деятельности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Прибыль_от_продаж -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Прибыль_от_продаж">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Расположение -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Расположение">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Резервный_капитал -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Резервный_капитал">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Себестоймость_продаж -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Себестоймость_продаж">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_активов -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_активов">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_пассивов -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_пассивов">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#ФИО -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#ФИО">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_вложения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_вложения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Формула -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Формула">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Чистая_прибыль -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Чистая_прибыль">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_имущественного_положения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_имущественного_положения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#asd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#asd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Абсолютная_ликвидность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Абсолютная_ликвидность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 0.1 до 0.2</Значение_благополучия>
+        <Формула>Денежные средства и денежные эквиваленты / Итого по краткосрочным обязательствам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Быстрая_ликвидность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Быстрая_ликвидность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>1 и выше</Значение_благополучия>
+        <Формула>(Итого по оборотным активам - Запасы) / Итого по краткосрочным обязательствам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Доля_долгосрочных_финансовых_инвестиций_в_активах -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Доля_долгосрочных_финансовых_инвестиций_в_активах">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_имущественного_положения"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты(%)</Единица_измерения_показателя>
+        <Значение_благополучия>Идти на спад (снижение)</Значение_благополучия>
+        <Формула>Финансовые вложения / Сумма активов * 100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Доля_основных_средств_в_активах -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Доля_основных_средств_в_активах">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_имущественного_положения"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Формула>Основные средства / Сумма активов</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Иванов_Иван -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Иванов_Иван">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <Начальник_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Игнатов_Игнат"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_1"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_1"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_1"/>
+        <Является_работником_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1"/>
+        <Дата_рождения>12-04-1950</Дата_рождения>
+        <Должность>Главный бухгалтер</Должность>
+        <Зарплата rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</Зарплата>
+        <Пол>Мужской</Пол>
+        <ФИО>Иванов Иван Иванович</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Игнатов_Игнат -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Игнатов_Игнат">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <Является_руководителем rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1"/>
+        <Дата_рождения>4-12-1965</Дата_рождения>
+        <Зарплата rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</Зарплата>
+        <Пол>Мужской</Пол>
+        <ФИО>Игнатов Игнат Борисович</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании"/>
+        <Название_компании>Ленивцы</Название_компании>
+        <Расположение>Австралия</Расположение>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Копмании"/>
+        <Название_компании>Ежики</Название_компании>
+        <Расположение>Россия</Расположение>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Концентрация_заемного_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Концентрация_заемного_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 0.4 до 0.6</Значение_благополучия>
+        <Формула>(Заемные средства _долгосрочные обязательства + Заемные средства_краткосрочные обязательства) / Сумма активов</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Ликвидность_денежного_потока -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Ликвидность_денежного_потока">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 1</Значение_благополучия>
+        <Формула>положительный денежный поток (приток) / отрицательный денежный поток (отток)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Маневренность_собственного_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Маневренность_собственного_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 0.1</Значение_благополучия>
+        <Формула>(Итого по долгосрочным обязательствам + Итого по собственному капиталу и резерву - Итого по внеоборотным активам) / Итого по собственному капиталу и резерву</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Маневренность_собственных_оборотных_средств -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Маневренность_собственных_оборотных_средств">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 0</Значение_благополучия>
+        <Формула>Денежные средства и денежные эквиваленты / (Итого по собственному капиталу и резерву + Итого по долгосрочным обязательствам - Итого по внеоборотным активам)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Мобильность_активов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Мобильность_активов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_имущественного_положения"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Формула>Итого по оборотным активам / Итого по внеоборотным активам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Обеспечение_оборотных_активов_собственными_средствами -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Обеспечение_оборотных_активов_собственными_средствами">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>0.1 и выше</Значение_благополучия>
+        <Формула>(Итого по собственному капиталу и резерву - Итого по внеоборотным активам) / Итого по оборотным активам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Обеспечение_собственными_оборотными_средствами_запасов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Обеспечение_собственными_оборотными_средствами_запасов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>0.5 и выше</Значение_благополучия>
+        <Формула>(Итого по собственному капиталу и резерву + Итого по долгосрочным обязательствам - Итого по внеоборотным активам) / Итого по оборотным активам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_активов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_активов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Формула>Выручка / (Сумма активов(на начало года) / 2 + Сумма активов(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_дебиторской_задолженности -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_дебиторской_задолженности">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>Сельское хозяйство 4,8
+Пищевая и перерабатывающие отрасли 8
+Посредники, оптовые и розничные торговцы 12
+Прочие 12</Значение_благополучия>
+        <Формула>Выручка / (Дебиторская задолженность(на начало года) / 2 + Дебиторская задолженность(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_запасов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_запасов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>Сельское хозяйство 3-6
+Пищевая и перерабатывающие отрасли 4,5-8
+Посредники, оптовые и розничные торговцы 8-18
+Прочие 8-18</Значение_благополучия>
+        <Формула>Себестоймость продаж / (Запасы(на начало года) / 2 + Запасы(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_кредиторской_задолженности -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_кредиторской_задолженности">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>Сельское хозяйство 4,8
+Пищевая и перерабатывающие отрасли 8
+Посредники, оптовые и розничные торговцы 12
+Прочие 12</Значение_благополучия>
+        <Формула>Себестоймость продаж / (Кредиторская задолженность(на начало года) / 2 + Кредиторская задолженность(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_оборотных_средств -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_оборотных_средств">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Формула>Выручка / (Итого по оборотным активам(на начало года) / 2 + Итого по оборотным активам(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_собственного_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Оборачиваемость_собственного_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Формула>Выручка / (Итого по собственному капиталу и резерву(на начало года) / 2 + Итого по собственному капиталу и резерву(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1"/>
+        <Дата_отчета>02-02-2021</Дата_отчета>
+        <Отрицательный_денежный_поток_всего rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134254</Отрицательный_денежный_поток_всего>
+        <Отрицательный_денежный_поток_по_текущей_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8956</Отрицательный_денежный_поток_по_текущей_деятельности>
+        <Период_отчета>1 год</Период_отчета>
+        <Положительный_денежный_поток_всего rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131423</Положительный_денежный_поток_всего>
+        <Положительный_денежный_поток_по_инвестиционной_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">345143</Положительный_денежный_поток_по_инвестиционной_деятельности>
+        <Положительный_денежный_поток_по_текущей_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12328</Положительный_денежный_поток_по_текущей_деятельности>
+        <Положительный_денежный_поток_по_финансовой_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2143</Положительный_денежный_поток_по_финансовой_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2"/>
+        <Дата_отчета>17-07-2017</Дата_отчета>
+        <Отрицательный_денежный_поток_всего rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">442</Отрицательный_денежный_поток_всего>
+        <Отрицательный_денежный_поток_по_текущей_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Отрицательный_денежный_поток_по_текущей_деятельности>
+        <Отрицательный_денежный_поток_по_текущей_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125322</Отрицательный_денежный_поток_по_текущей_деятельности>
+        <Период_отчета>1 год</Период_отчета>
+        <Положительный_денежный_поток_всего rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</Положительный_денежный_поток_всего>
+        <Положительный_денежный_поток_по_инвестиционной_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87654326</Положительный_денежный_поток_по_инвестиционной_деятельности>
+        <Положительный_денежный_поток_по_финансовой_деятельности rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</Положительный_денежный_поток_по_финансовой_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1"/>
+        <Выручка rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</Выручка>
+        <Дата_отчета>1-01-2017</Дата_отчета>
+        <Период_отчета>1 год</Период_отчета>
+        <Прибыль_от_продаж rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</Прибыль_от_продаж>
+        <Себестоймость_продаж rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1234</Себестоймость_продаж>
+        <Чистая_прибыль rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">494309</Чистая_прибыль>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибыля_и_убытках"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2"/>
+        <Выручка rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1243</Выручка>
+        <Дата_отчета>31-02-2020</Дата_отчета>
+        <Период_отчета>1 год</Период_отчета>
+        <Прибыль_от_продаж rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Прибыль_от_продаж>
+        <Себестоймость_продаж rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43580</Себестоймость_продаж>
+        <Чистая_прибыль rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1237578332</Чистая_прибыль>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_1"/>
+        <Дебиторская_задолженность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6312</Дебиторская_задолженность>
+        <Денежные_средства_и_денежные_эквиваленты rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</Денежные_средства_и_денежные_эквиваленты>
+        <Заемные_средства_долгосрочные_обязательства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</Заемные_средства_долгосрочные_обязательства>
+        <Заемные_средства_краткосрочные_обязательства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</Заемные_средства_краткосрочные_обязательства>
+        <Запасы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</Запасы>
+        <Итого_по_внеоборотным_активам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">545</Итого_по_внеоборотным_активам>
+        <Итого_по_долгосрочным_обязательствам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</Итого_по_долгосрочным_обязательствам>
+        <Итого_по_краткосрочным_обязательствам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Итого_по_краткосрочным_обязательствам>
+        <Итого_по_оборотным_активам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Итого_по_оборотным_активам>
+        <Итого_по_собственному_капиталу_и_резерву rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</Итого_по_собственному_капиталу_и_резерву>
+        <Кредиторская_задолженность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</Кредиторская_задолженность>
+        <Незавершенное_производство rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Незавершенное_производство>
+        <Нераспределенная_прибыль rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</Нераспределенная_прибыль>
+        <Основные_средства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</Основные_средства>
+        <Резервный_капитал rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">345</Резервный_капитал>
+        <Сумма_активов rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231</Сумма_активов>
+        <Сумма_пассивов rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</Сумма_пассивов>
+        <Финансовые_вложения rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Финансовые_вложения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Источники_Информации"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении"/>
+        <Отчет_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2"/>
+        <Дебиторская_задолженность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">453</Дебиторская_задолженность>
+        <Денежные_средства_и_денежные_эквиваленты rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">765</Денежные_средства_и_денежные_эквиваленты>
+        <Заемные_средства_долгосрочные_обязательства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">765408</Заемные_средства_долгосрочные_обязательства>
+        <Заемные_средства_краткосрочные_обязательства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">534</Заемные_средства_краткосрочные_обязательства>
+        <Запасы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">213</Запасы>
+        <Итого_по_внеоборотным_активам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Итого_по_внеоборотным_активам>
+        <Итого_по_долгосрочным_обязательствам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5555</Итого_по_долгосрочным_обязательствам>
+        <Итого_по_краткосрочным_обязательствам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">564</Итого_по_краткосрочным_обязательствам>
+        <Итого_по_оборотным_активам rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6543</Итого_по_оборотным_активам>
+        <Итого_по_собственному_капиталу_и_резерву rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">445</Итого_по_собственному_капиталу_и_резерву>
+        <Кредиторская_задолженность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1234</Кредиторская_задолженность>
+        <Незавершенное_производство rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">953</Незавершенное_производство>
+        <Нераспределенная_прибыль rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">445</Нераспределенная_прибыль>
+        <Основные_средства rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">432</Основные_средства>
+        <Резервный_капитал rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">564</Резервный_капитал>
+        <Сумма_активов rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</Сумма_активов>
+        <Сумма_пассивов rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">325</Сумма_пассивов>
+        <Финансовые_вложения rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</Финансовые_вложения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_оборота_оборотных_средств -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_оборота_оборотных_средств">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Снижение показателя по сравнению с ппредыдущим значением</Значение_благополучия>
+        <Формула>(360 * (Итого по оборотным активам(на начало года) / 2 + Итого по оборотным активам(на конец года) / 2)) / Выручка</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_одного_оборота_запасов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_одного_оборота_запасов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Сельское хозяйство От 60 до 120
+Пищевая и перерабатывающие отрасли От 45 до 80
+Посредники, оптовые и розничные торговцы От 20 до 45
+Прочие От 20 до 45</Значение_благополучия>
+        <Формула>(360 * (Запасы(на начало года) / 2 + Запасы(на конец года) / 2)) / Себестоймость продаж</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_окупаемости_активов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_окупаемости_активов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>года</Единица_измерения_показателя>
+        <Значение_благополучия>желательным является повышения</Значение_благополучия>
+        <Формула>100 / Рентабельность активов</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_окупаемости_собственного_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_окупаемости_собственного_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>года</Единица_измерения_показателя>
+        <Формула>100 / Рентабельность собственного капитала</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_операционного_цикла -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_операционного_цикла">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Желательным является снижение показателя</Значение_благополучия>
+        <Формула>Период одного оборота запасов + Период погашения дебиторской задолженности</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_погашения_дебиторской_задолженности -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_погашения_дебиторской_задолженности">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Сельское хозяйство До 75
+Пищевая и перерабатывающие отрасли До 45
+Посредники, оптовые и розничные торговцы До 30
+Прочие До 30</Значение_благополучия>
+        <Формула>360 / Показатель оборачиваемости дебиторской задолженности</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_погашения_кредиторской_задолженности -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_погашения_кредиторской_задолженности">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Сельское хозяйство До 75
+Пищевая и перерабатывающие отрасли До 45
+Посредники, оптовые и розничные торговцы До 30
+Прочие До 30</Значение_благополучия>
+        <Формула>360 / Показатель оборачиваемости кредиторской задолженности</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_финансового_цикла -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Период_финансового_цикла">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>дни</Единица_измерения_показателя>
+        <Значение_благополучия>Положительной динамикой является сокращение показателя</Значение_благополучия>
+        <Формула>Период одного оборота запасов + Период погашения дебиторской задолженности - Период погашения кредиторской задолженности</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Петров_Петр -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Петров_Петр">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <Начальник_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сергеев_Анатолий"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_движении_денежных_средств_компании_2"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_прибылях_и_убытках_компании_2"/>
+        <Предоставил_отчет rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_о_финансовом_положении_компании_2"/>
+        <Является_работником_компании rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2"/>
+        <Дата_рождения>17-03-2001</Дата_рождения>
+        <Должность>Аналитик</Должность>
+        <Зарплата rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17000</Зарплата>
+        <Пол>Мужской</Пол>
+        <ФИО>Петров Петр Петрович</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатель_инвестиционного_притока -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатель_инвестиционного_притока">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 1</Значение_благополучия>
+        <Формула>положительный денежный поток по инвестиционной деятельности / (положительный денежный поток по инвестиционной деятельности + положительный денежный поток по финансовой деятельности )</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Покрытие_запасов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Покрытие_запасов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 1</Значение_благополучия>
+        <Формула>(Итого по собственному капиталу и резерву - Итого по внеоборотным активам + Итого по краткосрочным обязательствам) / Запасы</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Реинвестирование -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Реинвестирование">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Значение_благополучия>больше 0</Значение_благополучия>
+        <Формула>(Резервный капитал(на начало года) - Резервный капитал(на конец года) + Нераспределенная прибыль(на начало года) - Нераспределенная прибыль(на конец года)) / Чистая прибыль * 100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_активов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_активов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Формула>Чистая прибыль / (Сумма активов(на начало года) / 2 + Сумма активов(на конец года) / 2) * 100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_положительного_денежного_потока -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_положительного_денежного_потока">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>увеличение коэффициента считается позитивным явлением</Значение_благополучия>
+        <Формула>чистая прибыль организации / положительный денежный поток</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_продаж_по_чистой_прибыли -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_продаж_по_чистой_прибыли">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Значение_благополучия>больше 1</Значение_благополучия>
+        <Формула>Чистая прибыль / Выручка * 100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_продукции_по_прибыли_от_продаж -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_продукции_по_прибыли_от_продаж">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Формула>Прибыль от продаж / Выручка</Формула>
+        <Формула>больше 5</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_производственных_фондов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_производственных_фондов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Значение_благополучия>чем выше, тем лучше</Значение_благополучия>
+        <Формула>Чистая прибыль / (Основные средства(на начало года) / 2 + Основные средства(на конец года) / 2 + Запасы(на начало года) / 2 + Запасы(на конец года) / 2 + Незавершенное производство(на начало года) / 2 + Незавершенное производство(на конец года) / 2) *100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_собственного_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Рентабельность_собственного_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Значение_благополучия>чем выше, тем лучше</Значение_благополучия>
+        <Формула>Чистая прибыль / (Итого по собственному капиталу и резерву(на начало года) / 2 + Итого по собственному капиталу и резерву(на конец года) / 2) * 100%</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сергеев_Анатолий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сергеев_Анатолий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Люди"/>
+        <Является_руководителем rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Компания_2"/>
+        <Дата_рождения>16-05-1978</Дата_рождения>
+        <Зарплата rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120000</Зарплата>
+        <Пол>Мужской</Пол>
+        <ФИО>Сергеев Анатолий Геннадьевич</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Соотношение_текущей_дебиторской_и_кредиторской_задолженности -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Соотношение_текущей_дебиторской_и_кредиторской_задолженности">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>примерно = 1</Значение_благополучия>
+        <Формула>Кредитоорская задолженность / Дебиторская задолженность</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_собственных_обротных_средств -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Сумма_собственных_обротных_средств">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 0</Значение_благополучия>
+        <Формула>Итого по собственному капиталу и резерву - Итого по внеоборотным активам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Текущая_ликвидность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Текущая_ликвидность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 1 до 3</Значение_благополучия>
+        <Формула>Итого по оборотным активам / Итого по краткосрочным обязательствам</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Текущая_платежеспособность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Текущая_платежеспособность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_ликвидности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>больше 1</Значение_благополучия>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Устойчивость_экономического_роста -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Устойчивость_экономического_роста">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_рентабельности"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Единица_измерения_показателя>Проценты (%)</Единица_измерения_показателя>
+        <Формула>(Резервный капитал(на начало года) - Резервный капитал(на конец года) + Нераспределенная прибыль(на начало года) - Нераспределенная прибыль(на конец года))</Формула>
+        <Формула>чем выше, тем лучше</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_автономия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_автономия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 0.4 до 0.6</Значение_благополучия>
+        <Формула>Итого по собственному капиталу и резерву / Сумма пассивов</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_зависимость -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_зависимость">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 1.67 до 2.5</Значение_благополучия>
+        <Формула>Сумма пассивов / Итого по собственному капиталу и резерву</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_стабильность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_стабильность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 0.67 до 1.5</Значение_благополучия>
+        <Формула>Итого по собственному капиталу и резерву / (Итого по долгосрочным обязательствам + Итого по краткосрочным обязательствам)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_устойчивость -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовая_устойчивость">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_финансовой_устойчивости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>от 0.7 до 0.9</Значение_благополучия>
+        <Формула>(Итого по собственному капиталу и резерву + Итого по долгосрочным обязательствам) / Сумма пассивов</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Фондоотдача -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Фондоотдача">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Показатели_оборачиваемости"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Финансовые_Показатели"/>
+        <Значение_благополучия>Желательным является повышение</Значение_благополучия>
+        <Формула>Выручка / (Основные средства(на начало года) / 2 + Основные средства(на конец года) / 2)</Формула>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#работник">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#компания">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#отчет">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Является_работником_компании"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#работник"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#компания"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Предоставил_отчет"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#работник"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#отчет"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#Отчет_компании"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#отчет"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ibrag/ontologies/2020/2/untitled-ontology-12#компания"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
